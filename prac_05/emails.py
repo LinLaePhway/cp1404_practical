@@ -20,7 +20,11 @@ def main():
 
 
 def extract_name(email):
-    return email.split('@')[0].title()
+    parts = email.split('@')
+    username = parts[0]
+    name_parts = username.split('.')
+    name = ' '.join(name_parts).title()
+    return name
 
 
 main()
