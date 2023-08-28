@@ -10,4 +10,3 @@ for word in words:
 
 for word, count in sorted(word_counts.items()):
     print(f"{word} : {count}")
-
